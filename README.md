@@ -64,3 +64,5 @@ def silhouette_plot(X, from_k, to_k):
 scores=silhouette_plot(customer_df, 2, 7)
 ~~~
 
+![Sill_2](https://user-images.githubusercontent.com/67301601/143689665-2b8a47f7-9c2a-4865-8a71-b90b65bee012.png) ![Sill_3](https://user-images.githubusercontent.com/67301601/143689686-419a804c-357b-4b14-bc86-c6557b571825.png)
+
