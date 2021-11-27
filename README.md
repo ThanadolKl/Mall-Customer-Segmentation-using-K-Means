@@ -66,3 +66,4 @@ scores=silhouette_plot(customer_df, 2, 7)
 
 <img src="https://user-images.githubusercontent.com/67301601/143689665-2b8a47f7-9c2a-4865-8a71-b90b65bee012.png"  height="300">  <img src="https://user-images.githubusercontent.com/67301601/143689686-419a804c-357b-4b14-bc86-c6557b571825.png"  height="300">
 
+<img height="300" alt="Sill_4" src="https://user-images.githubusercontent.com/67301601/143689930-06a7a22b-92b1-4fe1-94b7-4fb4e58ae215.png">
