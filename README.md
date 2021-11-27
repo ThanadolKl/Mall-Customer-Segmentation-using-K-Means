@@ -85,8 +85,13 @@ kmeans = KMeans(n_clusters=6).fit(customer_df[['Age', 'Annual Income (k$)', 'Spe
 
 <img alt="3d" src="https://user-images.githubusercontent.com/67301601/143704422-44dcf893-b9b5-426f-a3f1-d5c7809c2bef.png" height="400">
 
-### kmeans clustering using `Age` and `Annual Income` columns [6 clusters]
+### kmeans clustering using Age and Annual Income columns [6 clusters]
 
 <img height="300"  src= "https://user-images.githubusercontent.com/67301601/143707506-1c728812-c6e8-43fe-95d3-d1fe7d3bb025.png"> 
 
-> จะเห็นว่ามีการแบ่งเป็น clusters ที่ค่อนข้างมองยาก กลุ่ม cluster 5 เป็นกลุ่มที่มีการกระจายตัวของอายุ แต่ Annual Income ต่ำ ส่วน clusters อื่น ๆ ก็มีการเกาะกลุ่มกัน แต่ก็มีส่วนที่ซ้อนทับกัน เช่น cluster 0, 2 คือกลุ่มคนอายุ 20-40 และ 50-70 แต่มี Annual Income พอ ๆ กัน ส่วน cluster 1, 4 คือกลุ่มคนที่มีอายุ 30-60 และจากข้อมูลในกราฟ ก็เป็นกลุ่มคนที่มี Annual Income ที่ค่อนข้างสูงทำให้รูปนี้อาจจะ
+> จะเห็นว่ามีการแบ่งเป็น clusters ที่ค่อนข้างมองยาก กลุ่ม cluster 5 เป็นกลุ่มที่มีการกระจายตัวของอายุ แต่ Annual Income ต่ำ ส่วน clusters อื่น ๆ ก็มีการเกาะกลุ่มกัน แต่ก็มีส่วนที่ซ้อนทับกัน เช่น cluster 0, 2 คือกลุ่มคนอายุ 20-40 และ 50-70 แต่มี Annual Income พอ ๆ กัน ส่วน cluster 1, 4 คือกลุ่มคนที่มีอายุ 30-60 และจากข้อมูลในกราฟ ก็เป็นกลุ่มคนที่มี Annual Income ที่ค่อนข้างสูง  แต่อย่างไรก็ตาม รูปนี้ก็ค่อนข้างแบ่งได้ไม่ดีนัก จุด centroid ของบาง cluster ก็ค่อนข้างใกล้กัน และมี data points ที่ซ้อนทับกันค่อนข้างเยอะ ทำให้รูปนี้อาจจะไม่สามารถนำมาเป็นข้อมูลหลักในการวิเคราะห์ marketing
+
+### kmeans clustering using Age and Spending Score (1-100) [6 clusters]
+
+<img height="300"  src= "https://user-images.githubusercontent.com/67301601/143715536-40890ffd-db40-4bd8-afef-da75678cddb2.png>
+  
