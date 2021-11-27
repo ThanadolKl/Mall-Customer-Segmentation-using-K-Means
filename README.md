@@ -4,7 +4,7 @@
 
 ## Data Cleaning
 
-> Clean data โดยลบ column ที่อาจจะไม่จำเป็น และเป็น Binary categories เช่่น column Gender (ซึ่งจริง ๆ ก็สามารถนำมาใช้ในการวิเคราห์ได้หากสินค้าเป็นสินค้าที่แบ่งแยกเพศ แต่ในที่นี้ขอไม่ใช้ column นี้)
+> Clean data โดยลบ column ที่อาจจะไม่จำเป็น และเป็น Binary categories เช่น column Gender (ซึ่งจริง ๆ ก็สามารถนำมาใช้ในการวิเคราห์ได้หากสินค้าเป็นสินค้าที่แบ่งแยกเพศ แต่ในที่นี้ขอไม่ใช้ column นี้)
 
 ~~~
 
@@ -71,5 +71,5 @@ scores=silhouette_plot(customer_df, 2, 7)
 
 > ซึ่งจะเห็นว่าค่าเมื่อแบ่งเป็น 2 clusters ค่า Silhouette scores จะต่ำ ดังนั้นหากเลือก n_clusters ในช่วง 5, 6, 7 clusters จะให้ค่า Silhouette scores ประมาณ 0.43-0.45 ซึ่งเป็นค่าที่ค่อนข้างสูงเมื่อเปรียบเทียบกับ n_clusters อื่น ๆ 
 
-> นอกจากนี้ เมื่อพิจารณาภาพที่ Visualize ออกมาแล้ว ดู Thickness ของแต่ละ clusters จะพบว่า n_clusters = 5 จะมีความไม่เท่ากันในแต่ละ clusters (โดยเฉพาะ cluster 0) , n_clusters = 6 มี Thickness ที่ค่อนข้างคงที่ ไม่ต่างกันมาก , n_clusters = 7 จะพบว่า clusters 2 มี Thickness ที่ไม่ค่อยเหมือนกับ clusters อื่น ๆ *จึงคิดว่า n_clusters ที่เหมาะสมที่สุดคือ 6
+> นอกจากนี้ เมื่อพิจารณาภาพที่ Visualize ออกมาแล้ว ดู Thickness ของแต่ละ clusters จะพบว่า n_clusters = 5 จะมีความไม่เท่ากันในแต่ละ clusters (โดยเฉพาะ cluster 0) , n_clusters = 6 มี Thickness ที่ค่อนข้างคงที่ ไม่ต่างกันมาก , n_clusters = 7 จะพบว่า clusters 2 มี Thickness ที่ไม่ค่อยเหมือนกับ clusters อื่น ๆ **จึงคิดว่า n_clusters ที่เหมาะสมที่สุดคือ 6**
 
