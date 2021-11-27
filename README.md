@@ -69,5 +69,7 @@ scores=silhouette_plot(customer_df, 2, 7)
 
 <img height="300" alt="sill_6" src="https://user-images.githubusercontent.com/67301601/143690236-28ba09e1-3166-4d00-b067-97794390306e.png"> <img height="300" alt="sill_7" src="https://user-images.githubusercontent.com/67301601/143690237-b87aa686-5073-43f9-bf64-afdc533243e2.png">
 
-> ซึ่งจะเห็นว่าค่าเมื่อแบ่งเป็น 2 clusters ค่า Silhouette scores จะต่ำ ดังนั้นหากเลือก n_clusters 
+> ซึ่งจะเห็นว่าค่าเมื่อแบ่งเป็น 2 clusters ค่า Silhouette scores จะต่ำ ดังนั้นหากเลือก n_clusters ในช่วง 5, 6, 7 clusters จะให้ค่า Silhouette scores ประมาณ 0.43-0.45 ซึ่งเป็นค่าที่ค่อนข้างสูงเมื่อเปรียบเทียบกับ n_clusters อื่น ๆ 
+
+> นอกจากนี้ เมื่อพิจารฯาภาพที่ Visualize ออกมาแล้ว
 
