@@ -73,3 +73,15 @@ scores=silhouette_plot(customer_df, 2, 7)
 
 > นอกจากนี้ เมื่อพิจารณาภาพที่ Visualize ออกมาแล้ว ดู Thickness ของแต่ละ clusters จะพบว่า n_clusters = 5 จะมีความไม่เท่ากันในแต่ละ clusters (โดยเฉพาะ cluster 0) , n_clusters = 6 มี Thickness ที่ค่อนข้างคงที่ ไม่ต่างกันมาก , n_clusters = 7 จะพบว่า clusters 2 มี Thickness ที่ไม่ค่อยเหมือนกับ clusters อื่น ๆ **จึงคิดว่า n_clusters ที่เหมาะสมที่สุดคือ 6**
 
+----
+
+## K-Means Clustering with 6 clusters
+
+~~~
+kmeans = KMeans(n_clusters=6).fit(customer_df[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']])
+~~~
+
+### Plot of 3 axis (Age, Annual Income (k$), Spending Score (1-100))
+
+<img height="300" alt="3d" src="https://user-images.githubusercontent.com/67301601/143704422-44dcf893-b9b5-426f-a3f1-d5c7809c2bef.png" height="400">
+
