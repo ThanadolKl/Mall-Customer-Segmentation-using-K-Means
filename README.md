@@ -22,6 +22,7 @@ customer_df = df.drop(columns=['Gender'])
 
 ~~~
 from sklearn.metrics import silhouette_score
+from yellowbrick.cluster import SilhouetteVisualizer ## สำหรับการ Visualize 
 ###
 for n_cluster in [2,3,4,5,6,7,8]:
     kmeans = KMeans(n_clusters=n_cluster).fit(
@@ -33,5 +34,33 @@ for n_cluster in [2,3,4,5,6,7,8]:
     print('Silhouette Score for %i Clusters: %0.4f' % (n_cluster, silhouette_avg))
 ~~~    
 
+### Output
+
+~~~
+Silhouette Score for 2 Clusters: 0.2932
+Silhouette Score for 3 Clusters: 0.3839
+Silhouette Score for 4 Clusters: 0.4055
+Silhouette Score for 5 Clusters: 0.4405
+Silhouette Score for 6 Clusters: 0.4523
+Silhouette Score for 7 Clusters: 0.4398
+Silhouette Score for 8 Clusters: 0.4281
+~~~
+
 > Visualize data
+
+~~~
+def silhouette_plot(X, from_k, to_k):
+    sil_scores=[]
+    for k in range(from_k, to_k + 1):
+        # Instantiate the clustering model and visualizer
+        m = KMeans(n_clusters=k)
+        visualizer = SilhouetteVisualizer(m)
+        visualizer.fit(X) 
+        visualizer.poof() 
+        print(visualizer.silhouette_score_)
+        sil_scores.append([visualizer.silhouette_score_, k])
+    return sil_scores
+    
+scores=silhouette_plot(customer_df, 2, 7)
+~~~
 
