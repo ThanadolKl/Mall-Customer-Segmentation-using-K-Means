@@ -66,4 +66,9 @@ scores=silhouette_plot(customer_df, 2, 7)
 
 <img src="https://user-images.githubusercontent.com/67301601/143689665-2b8a47f7-9c2a-4865-8a71-b90b65bee012.png"  height="300">  <img src="https://user-images.githubusercontent.com/67301601/143689686-419a804c-357b-4b14-bc86-c6557b571825.png"  height="300">
 
-<img height="300" alt="Sill_4" src="https://user-images.githubusercontent.com/67301601/143689930-06a7a22b-92b1-4fe1-94b7-4fb4e58ae215.png">
+<img height="300" alt="Sill_4" src="https://user-images.githubusercontent.com/67301601/143689930-06a7a22b-92b1-4fe1-94b7-4fb4e58ae215.png"> <img height="300" alt="Sill_5" src="https://user-images.githubusercontent.com/67301601/143689962-ddcb6a98-e0f9-4237-8b1d-195b246a9ca1.png">
+
+<img height="300" alt="sill_6" src="https://user-images.githubusercontent.com/67301601/143689973-b4aa2479-0d28-44f3-afd7-794139ea010e.png"> <img height="300" alt="sill_7" src="https://user-images.githubusercontent.com/67301601/143689990-417f3d35-f819-44a2-a364-373cdda956f4.png">
+
+
+
