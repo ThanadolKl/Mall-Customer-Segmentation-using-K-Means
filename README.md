@@ -93,5 +93,5 @@ kmeans = KMeans(n_clusters=6).fit(customer_df[['Age', 'Annual Income (k$)', 'Spe
 
 ### kmeans clustering using Age and Spending Score (1-100) [6 clusters]
 
-<img height="300"  src= "https://user-images.githubusercontent.com/67301601/143715536-40890ffd-db40-4bd8-afef-da75678cddb2.png>
-  
+<img height="300" src= "https://user-images.githubusercontent.com/67301601/143715536-40890ffd-db40-4bd8-afef-da75678cddb2.png>
+                        
