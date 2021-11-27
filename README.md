@@ -108,3 +108,25 @@ kmeans = KMeans(n_clusters=6).fit(customer_df[['Age', 'Annual Income (k$)', 'Spe
 ## K-Means Clustering with 5 clusters
 
 ### K-Means Clustering using Age and Annual Income columns [5 clusters]
+
+<img height="300" src= "https://user-images.githubusercontent.com/67301601/143719113-d24bc6b4-f88c-407d-b94f-6d1288fdd7da.png">
+
+> จะเห็นว่ามีการเปลี่ยนแปลงในบริเวณ cluster ตรงกลาง ที่มีการรวมกันจาก 2 clusters เดิม 
+
+### K-Means Clustering using Age and Spending Score (1-100) [5 clusters]
+
+<img height="300" src= "https://user-images.githubusercontent.com/67301601/143719172-587d5948-2a85-4233-ae29-51a87db36ed2.png">
+
+>จะเห็นว่ามีการเปลี่ยนแปลงในบริเวณ cluster ตรงกลาง ที่มีการรวมกันจาก 2 clusters เดิม แต่ก็มีการกระจายตัวของค่าอายุที่ค่อนข้างเยอะใน cluster 4
+
+
+### K-Means Clustering using Annual Income columns and Spending Score (1-100) [5 clusters]
+
+<img height="300" src= "https://user-images.githubusercontent.com/67301601/143719231-7aeff17c-2f02-4584-9a2b-1f45ec36b8a9.png">
+
+> จะเห็นว่าปัญหาที่บริเวฯ clusters กลุ่มตรงกลาง มีการแบ่งแยกกัน ตอนนี้ได้กลับมารวมกันแล้ว ซึ่งก็แสดงให้เห็นถึงการแบ่งกลุ่มที่ชัดเจนมากยิ่งขึ้น โดยข้อมูลนี้เป็นข้อมูลที่สำคัญที่สุดในฐานข้อมูลนี้ ที่สามารถนำไปวิเคราะห์พฤติกรรมของลูกค้า และคิดกลยุทธ์ทางการตลาดที่เหมาะสมได้ **ซึ่งจะอธิบายในส่วนสรุปถัดไป**
+
+---
+
+## Summary
+
