@@ -8,8 +8,7 @@
 
 ~~~
 
-customer_df = df.drop(columns=['Gender'])
-
+customer_df = df.drop(columns=['CustomerID', 'Gender'])
 ~~~
 
 ## Normalization
