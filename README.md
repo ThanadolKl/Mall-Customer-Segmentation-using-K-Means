@@ -1,5 +1,6 @@
 # Mall-Customer-Segmentation-using-K-Means
 ## Author : Thanadol Klainin 6S No.8
+## ESC 782 DSS
 
 
 ## Data Cleaning
